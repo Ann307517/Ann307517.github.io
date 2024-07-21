@@ -292,95 +292,34 @@ a {
     border: 1px solid LightGrey;
     border-radius: 50%;
     background-color: transparent;
-
-{
     position: relative;
     top: 3px;
     left: 1px;
 }
 
-}
-
 .section-1 {
     border-right: 1px solid DimGrey;
     background-color: Orange;
-
-{
-    color: Orange;
-}
-
-& button {
-    color: Orange;
-    border-color: Orange;
-}
-
 }
 
 .section-2 {
     border-right: 1px solid DimGrey;
     background-color: Hotpink;
-
-{
-    color: HotPink;
-}
-
-& button {
-    color: HotPink;
-    border-color: HotPink;
-}
-
 }
 
 .section-3 {
     background-color: DodgerBlue;
-
-{
-    color: DodgerBlue;
-}
-
-& button {
-    color: DodgerBlue;
-    border-color: DodgerBlue;
-}
-
 }
 
 .grow {
     flex: 5;
     background-color: white;
-
-{
     padding: 20px 0px 20px 20px;
-}
-
-& button {
-    margin: 20px 20px 0px 20px;
-    transform: rotate(180deg);
-}
-
-& div {
-    justify-content: end;
-}
-
 }
 
 .shrink {
     min-width: 65px;
     flex: 0.1;
-
-& h3 {
-    color: WhiteSmoke;
-    transform-origin: 20% 100%;
-    writing-mode: vertical-rl;
-    margin: 20px 0px 15px 15px;
-}
-
-& button {
-    color: WhiteSmoke;
-    border: 1px solid WhiteSmoke;
-    margin: 20px 0px 0px 10px;
-}
-
 }
 
 @keyframes slide {
