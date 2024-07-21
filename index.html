@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head lang="en">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ashley_A02</title>    
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <a href="#home"><br>HOME</a>
+            <a href="#origin"><br>ORIGIN</a>
+            <a href="#types"><br>TYPES</a>
+            <a href="#game"><br>GAME</a>
+        </nav>
+
+        <div id="tab-folder">
+            <div id="home" class="tab-content">
+
+            </div>
+            <div id="origin" class="tab-content">
+                <h1>Oirigin of Desserts</h1>
+                <div class="a_wrapper">
+                    <ul class="accordion">
+                        <li class="atabs is-active">
+                            <div class="atab_header">
+                                <div>10:00</div>
+                                <div class="text">
+                                    <div>Text on side</div>
+                                </div>
+                            </div>
+                            <div class="atab_content">
+                                <div class="atab_contentwrapper">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisl eu nunc vehicula rhoncus. </div>
+                                </div>
+                                <div class="atab_img">
+                                    <img src="https://picsum.photos/600/500/?image=612" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="atabs">
+                            <div class="atab_header">
+                                <div>11:00</div>
+                                <div class="text">
+                                    <div>Text on side</div>
+                                </div>
+                            </div>
+                            <div class="atab_content">
+                                <div class="atab_contentwrapper">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisl eu nunc vehicula rhoncus. </div>
+                                </div>
+                                <div class="atab_img">
+                                    <img src="https://picsum.photos/600/500/?image=111" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="atabs">
+                            <div class="atab_header">
+                                <div>12:00</div>
+                                <div class="text">
+                                    <div>Text on side</div>
+                                </div>
+                            </div>
+                            <div class="atab_content">
+                                <div class="atab_contentwrapper">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisl eu nunc vehicula rhoncus. </div>
+                                </div>
+                                <div class="atab_img">
+                                    <img src="https://picsum.photos/600/500/?image=22" />
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="types" class="tab-content">
+                <div class="container">
+                    <h1>Types of desserts</h1>
+                    <div id="searchWrapper">
+                        <input type="text"
+                               name="searchBar"
+                               id="searchBar"
+                               placeholder="search for a dessert recipe" />
+                    </div>
+                    <ul id="typeList"></ul>
+                </div>
+            </div>
+            <div id="game" class="tab-content">
+                <div class="game-container">
+                    <div class="ingredients">
+                        <div class="ingredient" draggable="true" id="carrot">🥕 Carrot</div>
+                        <div class="ingredient" draggable="true" id="tomato">🍅 Tomato</div>
+                        <div class="ingredient" draggable="true" id="onion">🧅 Onion</div>
+                    </div>
+                    <div class="pot" id="pot">
+                        <div class="pot-content" id="pot-content"></div>
+                        <div id="spoon" draggable="false">🥄</div>
+                    </div>
+                </div>
+
+                <!---------------------------------------------->
+                <h1>Dessert Making Game</h1>
+                <div id="main-menu">
+                    <button id="pantry-button">Pantry</button>
+                    <button id="oven-button">Oven</button>
+                    <button id="stove-button">Stove</button>
+                    <button id="mixing-bowl-button">Mixing Bowl</button>
+                </div>
+                <div id="sections">
+                    <div id="pantry" class="section">
+                        <h2>Pantry</h2>
+                        <div class="ingredient" draggable="true" data-ingredient="flour">Flour</div>
+                        <div class="ingredient" draggable="true" data-ingredient="sugar">Sugar</div>
+                        <div class="ingredient" draggable="true" data-ingredient="butter">Butter</div>
+                        <div class="ingredient" draggable="true" data-ingredient="eggs">Eggs</div>
+                        <div class="ingredient" draggable="true" data-ingredient="milk">Milk</div>
+                    </div>
+                    <div id="oven" class="section droppable">
+                        <h2>Oven</h2>
+                        <div id="oven-drop" class="drop-area">Drop mixtures here to bake</div>
+                        <button id="oven-make-button">Bake</button>
+                        <div id="oven-result" class="result"></div>
+                    </div>
+                    <div id="stove" class="section droppable">
+                        <h2>Stove</h2>
+                        <div id="stove-drop" class="drop-area">Drop ingredients here to cook</div>
+                        <button id="stove-make-button">Cook</button>
+                        <div id="stove-result" class="result"></div>
+                    </div>
+                    <div id="mixing-bowl" class="section droppable">
+                        <h2>Mixing Bowl</h2>
+                        <div id="mixing-bowl-drop" class="drop-area">Drop ingredients here to mix</div>
+                        <button id="mixing-bowl-make-button">Mix</button>
+                        <div id="mixing-bowl-result" class="result"></div>
+                    </div>
+                    <div id="inventory" class="section droppable">
+                        <h2>Inventory</h2>
+                        <div id="inventory-drop" class="drop-area">Drop ingredients here to add to inventory</div>
+                        <ul id="inventory-list"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+    </body>
+</html>
