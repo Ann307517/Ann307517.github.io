@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashley_A02</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <button id="button">Fullscreen</button>
+
+        <a href="#home"><br>HOME</a>
+        <a href="#origin"><br>ORIGIN</a>
+        <a href="#types"><br>TYPES</a>
+        <a href="#game"><br>GAME</a>
+    </nav>
+
+    <div id="tab-folder">
+        <div id="home" class="tab-content">
+            <img src="images/QRcode.png" alt="qr code">
+            <div class="container">
+                <h1>Dessert Recipe Calculator</h1>
+                <button id="open-form">Open Recipe Calculator</button>
+            </div>
+
+            <div id="popup-form" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Recipe Calculator</h2>
+                    <form id="recipe-form">
+                        <label for="recipe-name">Recipe Name:</label>
+                        <input type="text" id="recipe-name" required><br><br>
+
+                        <label for="servings">Number of servings (original):</label>
+                        <input type="number" id="servings" required min="1"><br><br>
+
+                        <div id="ingredients-container">
+                            <label>Ingredients:</label>
+                            <div class="ingredient">
+                                <input type="text" class="ingredient-name" placeholder="Ingredient name" required>
+                                <input type="number" class="ingredient-amount" placeholder="Amount" required min="0.1" step="0.1">
+                                <input type="text" class="ingredient-unit" placeholder="Unit" required>
+                            </div>
+                        </div>
+                        <button type="button" id="add-ingredient">Add Ingredient</button><br><br>
+
+                        <label for="intended-servings">Number of servings (intended):</label>
+                        <input type="number" id="intended-servings" required min="1"><br><br>
+
+                        <button type="submit">Calculate Recipe</button>
+                    </form>
+
+                    <h2>Modified Recipe</h2>
+                    <div id="modified-recipe"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="origin" class="tab-content">
+            <h1>Oirigin of Desserts</h1>
+            <div class="a_wrapper">
+                <ul class="accordion">
+                    <li class="atabs is-active">
+                        <div class="atab_header">
+                            <div>JAPAN</div>
+                        </div>
+                        <div class="atab_content">
+                            <div class="atab_contentwrapper">
+                                <div>
+                                    <h1>JAPAN</h1>
+                                    <p>
+                                        The Japanese had been making desserts for centuries before sugar was widely available in Japan. Many desserts commonly available in Japan can be traced back hundreds of years. In Japanese cuisine, traditional sweets are known as wagashi, and are made using ingredients such as red bean paste and mochi. Though many desserts and sweets date back to the Edo period (1603–1867) and Meiji period (1868–1911), many modern-day sweets and desserts originating from Japan also exist.
+                                        <br>
+                                        However, the definition of wagashi is ambiguous, and the line between wagashi and other types of Japanese confectionery is vague. For example, although the original kasutera (castella) was introduced from Portugal, it has been around for more than 400 years and has been modified to suit Japanese tastes, so it is classified as a wagashi. The raindrop cake, created in 2014, was developed by a wagashi shop as a derivative of shingen mochi and is recognized as a wagashi in Japan. In recent years, wagashi shop have developed and marketed many confections that are an eclectic mix of wagashi and Western confections, often referred to as "neo-wagashi".
+                                    </p>
+                                    <br>
+                                    <h3>Tokyo Banana</h3>
+                                    <p>
+                                        Tokyo Banana Miitsuketa (見ぃつけたっ), the original banana custard flavor, first went on sale in 1991. Even before Tokyo Banana, there were a large number of souvenir cakes in Tokyo, but Tokyo Banana was the first to include "Tokyo" in its product name.
+
+                                        As of 2016, the yearly sales are roughly 4 billion yen.
+
+                                        The first store selling Tokyo Banana outside of Tokyo was established in Osaka by Grapestone in April 2020 as travel slumped during the COVID-19 pandemic. In 2022, a new flagship store dedicated solely to Tokyo Banana products was opened in Tokyo Station.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="atab_img">
+                                <picture>
+                                    <source srcset="images/japan-small.jpg" media="(max-width: 800px)">
+                                    <source srcset="images/japan.jpg" media="(min-width: 801px)">
+                                    <source srcset="images/japan.jpg">
+                                    <img src="images/japan.jpg" alt="Japan">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="atabs">
+                        <div class="atab_header">
+                            <div>FRANCE</div>
+                        </div>
+                        <div class="atab_content">
+                            <div class="atab_contentwrapper">
+                                <div>
+                                    <h1>FRANCE</h1>
+                                    <h3>Croissant</h3>
+                                    <p>
+                                        Contrary to popular belief, the croissant was called “kipferl” and first originated in Austria in the 13th century before becoming a beloved French pastry. They were often stuffed with nuts and other types of filling while also being denser and sweeter compared to the flakiness and butteriness we are familiar with today.
+
+                                        Baker August Zang then brought the kipfel to his patisserie in Paris in the early 1800s, which was flakier than its traditional counterpart. Parisians began calling them croissants because of the pastries’ crescent-like shape. Finally, in 1915, French baker Sylvain Claudius Goy came up with the croissant recipe that generations would come to love for years.
+                                    </p>
+                                    <h3>Macarons</h3>
+                                    <p>
+                                        The elegant macarons that come in gorgeous colours and are often gifted to friends and family are considered to be of Italian origin, dating back to the 8th century. This dessert was introduced to France when Italy’s Queen Catherine de’ Medici married France’s King Henry II and her pastry chefs brought the recipe along.
+
+                                        Macarons then became popular in France, with the first written recipe emerging in the 17th century.
+                                    </p>
+                                    <h3>Cream Puffs</h3>
+                                    <p>
+                                        Cream puffs are a popular pastry that are enjoyed around the world, but their origin can be traced back to France in the 16th century.
+
+                                        Legend has it that cream puffs were invented by a French chef named Pantanelli during the 16th century reign of King Henry II. The story goes that Pantanelli was working in the kitchen of Catherine de’ Medici, the queen consort of France, when he accidentally created the first cream puff by adding too much flour to a pastry dough. Rather than discarding the dough, he baked it anyway and filled the resulting puff with a mixture of whipped cream and pastry cream. The cream puff was an instant hit, and it quickly became a popular dessert in France and beyond.
+
+                                        Over time, the recipe for cream puffs evolved, with different variations appearing in different countries. In Italy, for example, cream puffs are called “bignè” and are often filled with chocolate or vanilla cream. In the United States, cream puffs are sometimes referred to as “profiteroles” and are often served drizzled with chocolate sauce.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="atab_img">
+                                <picture>
+                                    <source srcset="images/france-small.jpg" media="(max-width: 800px)">
+                                    <source srcset="images/france.jpg" media="(min-width: 801px)">
+                                    <source srcset="images/france.jpg">
+                                    <img src="images/france.jpg" alt="France">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="atabs">
+                        <div class="atab_header">
+                            <div>SINGAPORE</div>
+                        </div>
+                        <div class="atab_content">
+                            <div class="atab_contentwrapper">
+                                <div>
+                                    <h1>SINGAPORE</h1>
+                                    <h3>Bubur cha cha</h3>
+                                    <p>
+                                        Bubur cha cha, a dish of pearled sago, sweet potatoes, yams, bananas, black-eyed peas, pandan leaves, sugar, and salt cooked in coconut milk and served hot or cold.
+                                    </p>
+                                    <h3>Chendol</h3>
+                                    <p>
+                                        Chendol, basic version consist of pandan jelly strips with coconut milk and gula melaka syrup with shaved iced; other ingredients which could be added are red beans, sweet corns, ice cream and even durians.
+                                    </p>
+                                    <h3>Ice cream sandwich</h3>
+                                    <p>
+                                        Wafer ice cream sandwiches are a popular dish sold by street vendors operating carts on busy street corners. These carts carry a variety of flavours, including but not limited to vanilla, chocolate, strawberry, coffee, sweet corn, coconut, and durian. While some vendors sell their ice cream in cups or cones, as is common in the West, the more popular variant is on slices of bread or between wafers. The ice cream consists of sealed blocks which are sliced to order and then placed on a single slice of over-sized, often multicolored bread. This can be either white bread or a slice of multicolored, slightly sweetened bread (dyed with food colouring and flavoured with pandan leaf extract). A sandwich costs around S$1 but may cost up to S$2 or more in downtown areas and tourist spots.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="atab_img">
+                                <picture>
+                                    <source srcset="images/singapore-small.jpg" media="(max-width: 800px)">
+                                    <source srcset="images/singapore.jpg" media="(min-width: 801px)">
+                                    <source srcset="images/singapore.jpg">
+                                    <img src="images/singapore.jpg" alt="Singapore">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="types" class="tab-content">
+            <div class="container">
+                <h1>Types of desserts</h1>
+                <div id="searchWrapper">
+                    <input type="text"
+                           name="searchBar"
+                           id="searchBar"
+                           placeholder="search for a dessert recipe">
+                </div>
+                <ul id="typeList"></ul>
+            </div>
+        </div>
+        <div id="game" class="tab-content">
+            <h1>Dessert Making Game</h1>
+            <div id="main-menu">
+                <button id="pantry-button">Pantry</button>
+                <button id="oven-button">Oven</button>
+                <button id="stove-button">Stove</button>
+                <button id="mixing-bowl-button">Mixing Bowl</button>
+            </div>
+            <div id="sections">
+                <div id="pantry" class="section">
+                    <h2>Pantry</h2>
+                    <div class="ingredient" draggable="true" data-ingredient="flour">Flour</div>
+                    <div class="ingredient" draggable="true" data-ingredient="sugar">Sugar</div>
+                    <div class="ingredient" draggable="true" data-ingredient="butter">Butter</div>
+                    <div class="ingredient" draggable="true" data-ingredient="eggs">Eggs</div>
+                    <div class="ingredient" draggable="true" data-ingredient="milk">Milk</div>
+                </div>
+                <div id="oven" class="section droppable">
+                    <h2>Oven</h2>
+                    <div id="oven-drop" class="drop-area">Drop mixtures here to bake</div>
+                    <button id="oven-make-button">Bake</button>
+                    <div id="oven-result" class="result"></div>
+                </div>
+                <div id="stove" class="section droppable">
+                    <h2>Stove</h2>
+                    <div id="stove-drop" class="drop-area">Drop ingredients here to cook</div>
+                    <button id="stove-make-button">Cook</button>
+                    <div id="stove-result" class="result"></div>
+                </div>
+                <div id="mixing-bowl" class="section droppable">
+                    <h2>Mixing Bowl</h2>
+                    <div id="mixing-bowl-drop" class="drop-area">Drop ingredients here to mix</div>
+                    <button id="mixing-bowl-make-button">Mix</button>
+                    <div id="mixing-bowl-result" class="result"></div>
+                </div>
+                <div id="inventory" class="section droppable">
+                    <h2>Inventory</h2>
+                    <div id="inventory-drop" class="drop-area">Drop ingredients here to add to inventory</div>
+                    <ul id="inventory-list"></ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
